@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Savvy\PortfolioBundle\SavvyPortfolioBundle(),
             new Oxygen\ContactBundle\OxygenContactBundle(),
             new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
+            new Savvy\ContactExtensionBundle\SavvyContactExtensionBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

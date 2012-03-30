@@ -1,0 +1,5 @@
+{% extends "OxygenContactBundle::layout.html.twig" %}
+{% block theme 'white' %}
+{% block body %}
+  {% include 'OxygenContactBundle:Client:contact-form.html.twig' with {'form':form,'blank_layout':blank_layout} %}
+{% endblock %}

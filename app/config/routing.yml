@@ -1,3 +1,8 @@
+SavvyContactExtensionBundle:
+    resource: "@SavvyContactExtensionBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 SavvyPortfolioBundle:
     resource: "@SavvyPortfolioBundle/Controller/"
     type:     annotation

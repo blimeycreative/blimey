@@ -28,7 +28,7 @@
               <li><a href="{{ path("clients") }}" {% if app.request.attributes.get('_route') == 'clients' %}class="underline"{% endif %}>CLIENTS</a></li>
               <li><a href="{{ path("home") }}" {% if app.request.attributes.get('_route') == 'portfolio' %}class="underline"{% endif %}>PORTFOLIO</a></li>
               <li><a href="{{ path("meet_the_team") }}" {% if app.request.attributes.get('_route') == 'meet_the_team' %}class="underline"{% endif %}>MEET THE TEAM</a></li>
-              <li><a href="{{ path("contact") }}" {% if app.request.attributes.get('_route') == 'contact' %}class="underline"{% endif %}>CONTACT</a></li>
+              <li><a href="{{ path("new_contact") }}" {% if app.request.attributes.get('_route') == 'new_contact' %}class="underline"{% endif %}>CONTACT</a></li>
             </ul>
             <div class ="cb"></div>
             {% block body %}{% endblock %}
@@ -55,9 +55,9 @@
                 <a href="{{ path("home") }}">READ MORE</a>
               </div>
               <div class="quick-nav left">
-                <h4 {% if app.request.attributes.get('_route') == 'contact' %}class="orange"{% endif %}>CONTACT US</h4>
+                <h4 {% if app.request.attributes.get('_route') == 'new_contact' %}class="orange"{% endif %}>CONTACT US</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo...</p>
-                <a href="{{ path("contact") }}">READ MORE</a>
+                <a href="{{ path("new_contact") }}">READ MORE</a>
               </div>
               <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU</p>
             </div>

@@ -19,6 +19,8 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Savvy\StaticBundle\SavvyStaticBundle(),
             new Savvy\PortfolioBundle\SavvyPortfolioBundle(),
+            new Oxygen\ContactBundle\OxygenContactBundle(),
+            new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -19,7 +19,7 @@ class PortfolioController extends Controller
         $portfolio = $em->getRepository('SavvyPortfolioBundle:Portfolio')->findOneBy(array('slug' => $slug));
         $images = $portfolio->getImages();
         return $this->render('SavvyPortfolioBundle:Portfolio:index.html.twig', array(
-            'title' => $portfolio->getName(),
+            'portfolio' => $portfolio,
             'images' => $images
         ));
     }

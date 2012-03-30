@@ -94,7 +94,9 @@ div#quick_nav {width:960px; margin: 0 auto;}
 .orange {color: #C47136;}
 .column50 {width: 48%;}
 .underline {text-decoration: underline;}
-.purple {color: #643A63;}
+.purple {color: #643A63 !important;}
+.center {text-align: center;}
+.block {display: block;}
 
 /*************  QUICK NAV  **************/
 div.quick-nav {width: 218px;margin: 40px 10px;}
@@ -107,3 +109,11 @@ ul.navigation li a {color: #643A63;margin-right: 28px;font-weight: normal;letter
 
 /***************  THEME  ******************/
 div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #9B9B9D;}
+
+/****************  PORTFOLIO  *****************/
+/**** Thumbs ****/
+div.our-work-thumb {width: 230px; margin: 2px; height: 230px; background: #EAEFF1;}
+div.our-work-thumb img {margin: 5px;}
+div.portfolio-show img {padding: 5px; background: #EAEFF1; margin: 5px 0;}
+div.portfolio-show {width: 620px;}
+p.description {width: 300px;}

@@ -27,6 +27,13 @@ class Portfolio {
    * @ORM\Column(name="name", type="string", length=255)
    */
   private $name;
+
+  /**
+   * @var string $description
+   *
+   * @ORM\Column(name="description", type="text")
+   */
+  private $description;
   
   /**
    * @var string $slug
@@ -114,5 +121,25 @@ class Portfolio {
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * Set description
+     *
+     * @param text $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * Get description
+     *
+     * @return text 
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 }

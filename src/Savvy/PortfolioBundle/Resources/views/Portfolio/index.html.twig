@@ -1,0 +1,14 @@
+{% extends 'SavvyStaticBundle::layout.html.twig' %}
+{% block title 'About Us' %}
+{% block theme 'purple-bg' %}
+{% block body %}
+  <h1>PORTFOLIO</h1>
+  <h2>{{ title }}</h2>
+  {% for image in images %}
+    {{ image.path }}
+    <br />
+  {% else %}
+    <p>There are currently no images for this project.</p>
+  {% endfor %}
+
+{% endblock %}

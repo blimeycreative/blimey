@@ -1,0 +1,109 @@
+/* 
+    Document   : main.css
+    Created on : Mar 30, 2012, 11:39:13 AM
+    Author     : macmini3
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {overflow:scroll !important;}
+
+a {text-decoration: none;}
+
+body
+{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.2em;
+  color: #9B9B9D;
+  background: url('/images/footer-bg.png') repeat;
+  height: 100%;
+  font-weight: lighter;
+}
+
+h4 {color: #ffffff; font-size: 17px; margin: 8px 0; font-weight: lighter;}
+p {margin: 14px 0;}
+a, a:active, a:hover, a:visited {color: #9B9B9D;}
+a:hover {text-decoration: underline;}
+h1 {font-size: 28px; margin: 20px 0; letter-spacing: 2px; color: #643A63;}
+h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63;}
+
+/************  LAYOUT  **************/
+div#wrapper {width: 100%;}
+div#header_wrapper {background: url('/images/header-bg.png') repeat-x; height: 138px;}
+div#header {width:960px; margin: 0 auto;}
+div#footer_wrapper {background: url('/images/footer-bg.png') repeat; height: 32px;}
+div#footer {width:960px; margin: 0 auto;}
+div#content_wrapper {min-height: 600px; padding-bottom: 40px;}
+div#content {width:940px; margin: 0 auto;padding: 10px;}
+div#quick_nav_wrapper {background: #400035; height: 261px;}
+div#quick_nav {width:960px; margin: 0 auto;}
+
+/******** GENERIC CLASSES *********/
+.cb {clear:both;}
+.left {float: left;}
+.right {float: right;}
+.white-bg {background: #ffffff;}
+.purple-bg {background: #400035;}
+.rob {border-right: 2px solid #C47136;}
+.white {color: #ffffff;}
+.orange {color: #C47136;}
+.column50 {width: 48%;}
+.underline {text-decoration: underline;}
+.purple {color: #643A63;}
+
+/*************  QUICK NAV  **************/
+div.quick-nav {width: 218px;margin: 40px 10px;}
+p#address {margin-left: 10px;}
+
+/***************  TOP NAV  ******************/
+ul.navigation {margin: 50px 0 80px 0;}
+ul.navigation li {display: inline;}
+ul.navigation li a {color: #643A63;margin-right: 28px;font-weight: normal;letter-spacing: 2px;}
+
+/***************  THEME  ******************/
+div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #9B9B9D;}

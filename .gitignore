@@ -1,0 +1,12 @@
+/web/bundles
+/app/bootstrap.php.cache
+/app/cache
+/app/logs
+/vendor
+/app/config/parameters.ini
+/nbproject/private/
+/web/js
+/web/css
+/web/images
+/src/Oxygen/UtilityBundle/media_files
+/app/config/security.yml

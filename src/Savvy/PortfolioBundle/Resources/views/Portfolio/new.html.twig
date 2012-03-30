@@ -2,9 +2,9 @@
 {% block title 'Portfolio' %}
 {% block theme 'white-bg' %}
 {% block body %}
-<h1>Image creation</h1>
+<h1>Portfolio creation</h1>
 
-<form action="{{ path('image_create') }}" method="post" {{ form_enctype(form) }}>
+<form action="{{ path('admin_portfolio_create') }}" method="post" {{ form_enctype(form) }}>
     {{ form_widget(form) }}
     <p>
         <button type="submit">Create</button>
@@ -13,7 +13,7 @@
 
 <ul class="record_actions">
     <li>
-        <a href="{{ path('image') }}">
+        <a href="{{ path('admin_portfolio') }}">
             Back to the list
         </a>
     </li>

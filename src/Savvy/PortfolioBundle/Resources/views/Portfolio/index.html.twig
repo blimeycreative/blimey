@@ -1,16 +1,46 @@
 {% extends 'SavvyStaticBundle::layout.html.twig' %}
-{% block title %}Portfolio - {{ portfolio.name | title }} {% endblock %}
-{% block theme 'purple-bg' %}
+{% block title 'Portfolio' %}
+{% block theme 'white-bg' %}
 {% block body %}
-  <h1>{{ portfolio.name | title }}</h1>
-  <p class="description left">{{ portfolio.description }}</p>
-  <div class="portfolio-show right">
-    {% for image in images %}
-      <img class="right" src="/images/our-work/large/{{ image.path }}" />
-      <br />
-    {% else %}
-      <p>There are currently no images for this project.</p>
-    {% endfor %}
-  </div>
+<h1>Portfolio list</h1>
 
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Slug</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('admin_portfolio_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.name }}</td>
+            <td>{{ entity.description }}</td>
+            <td>{{ entity.slug }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('admin_portfolio_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('admin_portfolio_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('admin_portfolio_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>
 {% endblock %}

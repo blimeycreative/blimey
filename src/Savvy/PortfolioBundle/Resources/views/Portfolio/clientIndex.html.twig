@@ -1,0 +1,16 @@
+{% extends 'SavvyStaticBundle::layout.html.twig' %}
+{% block title %}Portfolio - {{ portfolio.name | title }} {% endblock %}
+{% block theme 'purple-bg' %}
+{% block body %}
+  <h1>{{ portfolio.name | title }}</h1>
+  <p class="description left">{{ portfolio.description }}</p>
+  <div class="portfolio-show right">
+    {% for image in images %}
+      <img class="right" src="/images/our-work/large/{{ image.path }}" />
+      <br />
+    {% else %}
+      <p>There are currently no images for this project.</p>
+    {% endfor %}
+  </div>
+
+{% endblock %}

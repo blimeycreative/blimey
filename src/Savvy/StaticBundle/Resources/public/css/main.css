@@ -60,7 +60,7 @@ body
   font-size: 13px;
   line-height: 1.2em;
   color: #9B9B9D;
-  background: url('/images/footer-bg.png') repeat;
+  background: url('/images/bg.png') repeat;
   height: 100%;
   font-weight: lighter;
 }
@@ -74,9 +74,9 @@ h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63;}
 
 /************  LAYOUT  **************/
 div#wrapper {width: 100%;}
-div#header_wrapper {background: url('/images/header-bg.png') repeat-x; height: 138px;}
+div#header_wrapper {height: 138px;}
 div#header {width:960px; margin: 0 auto;}
-div#footer_wrapper {background: url('/images/footer-bg.png') repeat; height: 32px;}
+div#footer_wrapper {height: 32px;}
 div#footer {width:960px; margin: 0 auto;}
 div#content_wrapper {min-height: 600px; padding-bottom: 40px;}
 div#content {width:940px; margin: 0 auto;padding: 10px;}

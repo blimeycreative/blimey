@@ -6,7 +6,7 @@
   <p class="description left">{{ portfolio.description }}</p>
   <div class="portfolio-show right">
     {% for image in images %}
-      <img class="right" src="/images/our-work/large/{{ image.path }}" />
+      <img class="right" src="/images/our-work/large/{{ image.path }}" alt="{{ image.name }}" />
       <br />
     {% else %}
       <p>There are currently no images for this project.</p>

@@ -97,6 +97,7 @@ div#quick_nav {width:960px; margin: 0 auto;}
 .purple {color: #643A63 !important;}
 .center {text-align: center;}
 .block {display: block;}
+.readmore{display: block; width: 95px; background: url('/images/triangle.png') no-repeat center right;}
 
 /*************  QUICK NAV  **************/
 div.quick-nav {width: 218px;margin: 40px 10px;}

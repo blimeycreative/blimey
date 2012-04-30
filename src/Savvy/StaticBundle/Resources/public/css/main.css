@@ -111,10 +111,16 @@ ul.navigation li a {color: #643A63;margin-right: 28px;font-weight: normal;letter
 /***************  THEME  ******************/
 div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #9B9B9D;}
 
+/****************  MEET THE TEAM  *****************/
+div.column50.right ul li {margin: 0 0 5px 5px;}
 /****************  PORTFOLIO  *****************/
 /**** Thumbs ****/
 div.our-work-thumb {width: 230px; margin: 2px; height: 230px; background: #EAEFF1;}
 div.our-work-thumb img {margin: 5px;}
 div.portfolio-show img {padding: 5px; background: #EAEFF1; margin: 5px 0;}
 div.portfolio-show {width: 620px;}
-p.description {width: 300px;}
+div.portfolio-show-left {width: 300px;}
+div.portfolio-show-left h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
+div.portfolio-show-left p {margin: 3px 0 10px;}
+ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20px;}
+ul.other-client-projects li span{color: #9B9B9D}

@@ -10,8 +10,9 @@
   <p>Call: 0115 xxxxxxxx</p>
   <p>Email:	info@savvycreativeuk.com</p>
   <p>Twitter: @savvycreativeuk</p>
-  <p>LinkedIn: XXXXXXXXX</p>
+  {#<p>LinkedIn: XXXXXXXXX</p>#}
 {% endblock %}
 {% block right %}
-  {% include 'OxygenContactBundle:Client:contact-form.html.twig' with {'form':form,'blank_layout':blank_layout} %}
+  {#% include 'OxygenContactBundle:Client:contact-form.html.twig' with {'form':form,'blank_layout':blank_layout} %#}
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=23+bridgford+road,+west+bridgford,+ng2+6au&amp;aq=&amp;sll=52.932264,-1.127169&amp;sspn=0.001719,0.003237&amp;ie=UTF8&amp;hq=&amp;hnear=23+Bridgford+Rd,+West+Bridgford,+Nottingham+NG2+6AU,+United+Kingdom&amp;ll=52.932604,-1.127833&amp;spn=0.006874,0.01295&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=23+bridgford+road,+west+bridgford,+ng2+6au&amp;aq=&amp;sll=52.932264,-1.127169&amp;sspn=0.001719,0.003237&amp;ie=UTF8&amp;hq=&amp;hnear=23+Bridgford+Rd,+West+Bridgford,+Nottingham+NG2+6AU,+United+Kingdom&amp;ll=52.932604,-1.127833&amp;spn=0.006874,0.01295&amp;t=m&amp;z=14" style="color:#643A63;text-align:left">View Larger Map</a></small>
 {% endblock %}

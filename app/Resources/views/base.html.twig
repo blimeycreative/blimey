@@ -45,9 +45,9 @@
                 <a href="{{ path("about_us") }}" class="readmore">READ MORE</a>
               </div>
               <div class="quick-nav rob left">
-                <h4 {% if app.request.attributes.get('_route') == 'about_us' %}class="orange"{% endif %}>CLEVER DESIGN</h4>
+                <h4 {% if app.request.attributes.get('_route') == 'clients' %}class="orange"{% endif %}>CLEVER DESIGN</h4>
                 <p>Once the smart thinking is in place, the design flows naturally. Take a look at our Portfolio and you’ll see what we mean&hellip;</p>
-                <a href="{{ path("about_us") }}" class="readmore">READ MORE</a>
+                <a href="{{ path("clients") }}" class="readmore">READ MORE</a>
               </div>
               <div class="quick-nav rob left">
                 <h4 {% if app.request.attributes.get('_route') == 'portfolio' %}class="orange"{% endif %}>SOLID DEVELOPMENT</h4>
@@ -56,7 +56,7 @@
               </div>
               <div class="quick-nav left">
                 <h4 {% if app.request.attributes.get('_route') == 'new_contact' %}class="orange"{% endif %}>CONTACT US</h4>
-                <p>Come and meet the team at Savvy. Well pop over to you. Or you can visit us, we guarantee a great cup of coffee, freshly ground, and Graham's home made biscuits&hellip;</p>
+                <p>Come and meet the team at Savvy. We guarantee a great cup of coffee, freshly ground, and Graham's home made biscuits&hellip;</p>
                 <a href="{{ path("new_contact") }}" class="readmore">READ MORE</a>
               </div>
               <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU</p>

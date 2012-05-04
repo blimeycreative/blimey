@@ -1,0 +1,37 @@
+{% extends 'SavvyStaticBundle::layout.html.twig' %}
+{% block title 'About Us' %}
+{% block theme 'white-bg' %}
+{% block body %}
+<h1>IT’S WHAT WE ARE. AND WHAT WE GIVE YOU.</h1>
+  {{ parent() }}
+{% endblock %}
+{% block left %}
+<h3 class="purple">Approach</h3>
+  <p>We have three core principles that guide everything we do here at Savvy:</p>
+  <p><span class="purple">Smart Thinking</span><br />Before we do any creative work, we talk to you and find out more about your business - your strategy, challenges and goals. Then we'll do some smart thinking before we even consider any design, creative or web work. And the ideas we come up with could well be a different and better way to achieve your objectives.</p>
+  <p><span class="purple">Clever Design</span><br />Once the smart thinking is in place, the design flows naturally. And we use all of our skills and experience to come up with creative work that’s fresh and original, and reinforces your brand, tone of voice and company values. Take a look at our Portfolio and you’ll see what we mean.</p>
+  <p><span class="purple">Solid Development</span><br />Online is now a major part of almost every business’s marketing activities. And the focus of this will always be the company website. On every single web project, our team design and build a site that’s robust, simple to navigate, search engine optimised and easily expandable as the business grows. It’s what we call solid development.</p>
+  
+{% endblock %}
+{% block right %}
+  <h3 class="purple">Open Communication</h3>
+  <p>We work in a more savvy way too. We don’t have layers and layers of managers or a big company hierarchy. You deal directly with the graphic designers or web developers who are working on your job. That way, they get a clearer brief and nothing gets lost in translation. Supported of course, by full client liaison to help make sure your project runs smoothly.</p>
+  <ul>
+    <li>Brand identity</li>
+    <li>Strategy and planning</li>
+    <li>Creative concepts</li>
+    <li>Graphic design</li>
+    <li>Artworking</li>
+    <li>Website design and development</li>
+    <li>Email campaigns</li>
+    <li>Social media campaign planning</li>
+    <li>Print, retail and exhibition solutions</li>
+    <li>Experiential marketing</li>
+    <li>Advertising concepts and media planning</li>
+  </ul>
+  <p>We don’t pretend to know so, if we need them, we call in extra specialist resources from highly skilled copywriters and photographers, to SEO experts and more.</p>
+{% endblock %}
+{% block quick_nav %}
+  <p id="visit" class="orange"><a href="{{ path('meet_the_team') }}">Do you want to meet the team?</a></p>
+  <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU. 01159 816276</p>
+{% endblock %}

@@ -1,13 +1,13 @@
-{% extends 'SavvyStaticBundle::layout.html.twig' %}
+{% extends 'SavvyStaticBundle::layoutHome.html.twig' %}
 {% block title 'Home' %}
 {% block theme 'purple-bg' %}
 {% block body %}
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'the-resort-group'}) }}"><img src="/images/our-work/work-thumb-1.png" alt="The Resourt Group work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'the-resort-group'}) }}">THE RESORT GROUP</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'the-happy-egg-co'}) }}"><img src="/images/our-work/work-thumb-2.png" alt="Happy Egg Co work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'the-happy-egg-co'}) }}">THE HAPPY EGG.CO</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'dunas-beach-resort-and-spa'}) }}"><img src="/images/our-work/work-thumb-3.png" alt="Dunas Resort and Spa work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'dunas-beach-resort-and-spa'}) }}">DUNAS BEACH RESORT & SPA</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'the-construction-hub'}) }}"><img src="/images/our-work/work-thumb-4.png" alt="The Construction Hub and Lifestyle hub work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'the-construction-hub'}) }}">THE CONSTRUCTION HUB</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'the-grill-at-twenty-five'}) }}"><img src="/images/our-work/work-thumb-5.png" alt="The Grill at Twenty Five work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'the-grill-at-twenty-five'}) }}">THE GRILL AT TWENTY FIVE</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'vacation-club'}) }}"><img src="/images/our-work/work-thumb-6.png" alt="Vaction Club work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'vacation-club'}) }}">VACATION CLUB</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'march-fourth'}) }}"><img src="/images/our-work/work-thumb-7.png" alt="March Fourth Campaign work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'march-fourth'}) }}">MARCH FOURTH</a></p></div>
-  <div class="our-work-thumb left"><a href="{{ path('portfolio', {'slug' : 'llana-beach-hotel'}) }}"><img src="/images/our-work/work-thumb-8.png" alt="Llana Beach Hotel work examples" /></a><p><a class="purple center block" href="{{ path('portfolio', {'slug' : 'llana-beach-hotel'}) }}">LLANA BEACH HOTEL</a></p></div>
+  <img src="/images/logo.jpg" alt="logo" width="268" height="138" id="logo" />
+  <p class="white">Welcome to Savvy Creative. We’re one of the newest creative design and digital agencies in Nottingham, but we’re certainly not new to the industry.</p>
+  <p class="white">Our team have bags of experience gained working for a variety of businesses in a number of different sectors. We’re all about high quality creative work - online and offline, above the line, below the line. All designed to improve your bottom line.</p>
+
+{% endblock %}
+{% block quick_nav %}
+  <p id="visit" class="orange"><a href="{{ path('portfolio') }}">See how creative we can be&hellip;</a></p>
+  <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU. 01159 816276</p>
 {% endblock %}

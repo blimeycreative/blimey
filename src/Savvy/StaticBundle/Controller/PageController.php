@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class PageController extends Controller
 {
-   
+
     /**
      * @Route("/", name="home")
      * @Template()
@@ -17,18 +17,16 @@ class PageController extends Controller
     {
         return array();
     }
-    
-    
+
     /**
-     * @Route("/about-us", name="about_us")
+     * @Route("/our-approach", name="our_approach")
      * @Template()
      */
     public function aboutUsAction()
     {
         return array();
     }
-    
-    
+
     /**
      * @Route("/meet-the-team", name="meet_the_team")
      * @Template()
@@ -37,8 +35,7 @@ class PageController extends Controller
     {
         return array();
     }
-    
-    
+
     /**
      * @Route("/clients", name="clients")
      * @Template()
@@ -47,16 +44,15 @@ class PageController extends Controller
     {
         return array();
     }
-    
-    
+
+
     /**
-     * Route("/contact", name="contact")
-     * Template()
+     * @Route("/portfolio", name="portfolio")
+     * @Template()
      */
-    public function contactAction()
+    public function portfolioAction()
     {
         return array();
     }
-    
-    
+
 }

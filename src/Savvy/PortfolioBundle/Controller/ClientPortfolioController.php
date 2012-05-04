@@ -10,7 +10,7 @@ class ClientPortfolioController extends Controller
 {
         
     /**
-     * @Route("/portfolio/{slug}", name="portfolio")
+     * @Route("/portfolio/{slug}", name="work")
      * @Template()
      */
     public function portfolioAction($slug)

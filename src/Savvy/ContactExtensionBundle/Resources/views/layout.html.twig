@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets '@OxygenContactBundle/Resources/public/css/contact.css' output='css/contact.css' %}
+    <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
+  {% endstylesheets %}
+{% endblock %}
+{% block body %}
+  <div class="column50 left">
+    {% block left %}{% endblock %}
+  </div>
+  <div class="column50 right">
+    {% block right %}{% endblock %}
+  </div>
+{% endblock %}

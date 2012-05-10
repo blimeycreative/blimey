@@ -49,14 +49,4 @@ class PageController extends Controller
     }
     
     
-    /**
-     * Route("/contact", name="contact")
-     * Template()
-     */
-    public function contactAction()
-    {
-        return array();
-    }
-    
-    
 }

@@ -17,6 +17,9 @@ class ClientPortfolioController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
         $portfolio = $em->getRepository('SavvyPortfolioBundle:Portfolio')->findOneBy(array('slug' => $slug));
+        if (!$portfolio) {
+            throw $this->createNotFoundException('Unable to find Portfolio entry.');
+        }
         $images = $portfolio->getImages();
         return $this->render('SavvyPortfolioBundle:Portfolio:clientIndex.html.twig', array(
             'portfolio' => $portfolio,

@@ -10,13 +10,16 @@ class ClientPortfolioController extends Controller
 {
         
     /**
-     * @Route("/portfolio/{slug}", name="portfolio")
+     * @Route("/portfolio/{slug}", name="work")
      * @Template()
      */
     public function portfolioAction($slug)
     {
         $em = $this->getDoctrine()->getEntityManager();
         $portfolio = $em->getRepository('SavvyPortfolioBundle:Portfolio')->findOneBy(array('slug' => $slug));
+        if (!$portfolio) {
+            throw $this->createNotFoundException('Unable to find Portfolio entry.');
+        }
         $images = $portfolio->getImages();
         return $this->render('SavvyPortfolioBundle:Portfolio:clientIndex.html.twig', array(
             'portfolio' => $portfolio,

@@ -24,10 +24,12 @@
           <div id="content">
             <ul class="navigation right">
               <li><a href="{{ path("home") }}" {% if app.request.attributes.get('_route') == 'home' %}class="underline"{% endif %}>HOME</a></li>
-              <li><a href="{{ path("about_us") }}" {% if app.request.attributes.get('_route') == 'about_us' %}class="underline"{% endif %}>ABOUT US</a></li>
+              <li><a href="{{ path("portfolio") }}" {% if app.request.attributes.get('_route') == 'portfolio' %}class="underline"{% endif %}>WORK</a></li>
               <li><a href="{{ path("clients") }}" {% if app.request.attributes.get('_route') == 'clients' %}class="underline"{% endif %}>CLIENTS</a></li>
-              <li><a href="{{ path("home") }}" {% if app.request.attributes.get('_route') == 'portfolio' %}class="underline"{% endif %}>PORTFOLIO</a></li>
-              <li><a href="{{ path("meet_the_team") }}" {% if app.request.attributes.get('_route') == 'meet_the_team' %}class="underline"{% endif %}>MEET THE TEAM</a></li>
+              <li><a href="{{ path("our_approach") }}" {% if app.request.attributes.get('_route') == 'our_approach' %}class="underline"{% endif %}>APPROACH</a></li>
+              
+              
+              <li><a href="{{ path("meet_the_team") }}" {% if app.request.attributes.get('_route') == 'meet_the_team' %}class="underline"{% endif %}>TEAM</a></li>
               <li><a href="{{ path("new_contact") }}" {% if app.request.attributes.get('_route') == 'new_contact' %}class="underline"{% endif %}>CONTACT</a></li>
             </ul>
             <div class ="cb"></div>
@@ -35,34 +37,36 @@
             <div class ="cb"></div>
           </div>
         </div>
-        
-        {% block quick_nav %}
-          <div id="quick_nav_wrapper" class ="cb">
-            <div id="quick_nav">
+        <div id="quick_nav_wrapper" class ="cb">
+          <div id="quick_nav">
+            {% block quick_nav %}
+          
+            {#<div id="quick_nav">
               <div class="quick-nav rob left">
                 <h4 {% if app.request.attributes.get('_route') == 'about_us' %}class="orange"{% endif %}>SMART THINKING</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo...</p>
+                <p>Before we do any creative work, we talk to you and find out more about your business - your strategy, challenges and goals&hellip;</p>
                 <a href="{{ path("about_us") }}" class="readmore">READ MORE</a>
               </div>
               <div class="quick-nav rob left">
-                <h4 {% if app.request.attributes.get('_route') == 'about_us' %}class="orange"{% endif %}>CLEVER DESIGN</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo...</p>
-                <a href="{{ path("about_us") }}" class="readmore">READ MORE</a>
+                <h4 {% if app.request.attributes.get('_route') == 'clients' %}class="orange"{% endif %}>CLEVER DESIGN</h4>
+                <p>Once the smart thinking is in place, the design flows naturally. Take a look at our Portfolio and you’ll see what we mean&hellip;</p>
+                <a href="{{ path("clients") }}" class="readmore">READ MORE</a>
               </div>
               <div class="quick-nav rob left">
                 <h4 {% if app.request.attributes.get('_route') == 'portfolio' %}class="orange"{% endif %}>SOLID DEVELOPMENT</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo...</p>
+                <p>Our team design and build websites that are robust, simple to navigate and easily expandable. It’s what we call solid development&hellip;</p>
                 <a href="{{ path("home") }}" class="readmore">READ MORE</a>
               </div>
               <div class="quick-nav left">
                 <h4 {% if app.request.attributes.get('_route') == 'new_contact' %}class="orange"{% endif %}>CONTACT US</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo...</p>
+                <p>Come and meet the team at Savvy. We guarantee a great cup of coffee, freshly ground, and Graham's home made biscuits&hellip;</p>
                 <a href="{{ path("new_contact") }}" class="readmore">READ MORE</a>
               </div>
               <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU</p>
-            </div>
-          </div>
-        {% endblock %}
+            </div>#}
+          {% endblock %}
+              </div>
+        </div>
         <div id="footer_wrapper">
           <div id="footer"></div>
         </div>

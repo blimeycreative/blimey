@@ -69,8 +69,7 @@ h4 {color: #ffffff; font-size: 17px; margin: 8px 0; font-weight: lighter;}
 p {margin: 14px 0;}
 a, a:active, a:hover, a:visited {color: #9B9B9D;}
 a:hover {text-decoration: underline;}
-h1 {font-size: 28px; margin: 20px 0; letter-spacing: 2px; color: #643A63;}
-h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63;}
+h1 {font-size: 28px; margin: 15px 0; letter-spacing: 2px; color: #643A63;font-family: "Times New Roman",Georgia,serif;}
 h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
 
 /************  LAYOUT  **************/
@@ -148,3 +147,5 @@ div.portfolio-show-left p {margin: 3px 0 10px;}
 ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20px;}
 ul.other-client-projects li span{color: #9B9B9D}
 
+/******* CLIENTS *******/
+img.client-logo {padding:5px;margin: 0;}

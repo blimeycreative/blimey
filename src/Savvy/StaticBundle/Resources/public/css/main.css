@@ -119,6 +119,19 @@ div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg 
 div.column50.right ul li {margin: 0 0 5px 5px;}
 
 /****************  PORTFOLIO  *****************/
+
+div.portfolio-show-left.sticky {
+	position:fixed;
+	top:45px;
+}
+div.portfolio-show.right.sticky {
+	margin-top:45px;
+}
+h1.sticky {
+	position:fixed;
+	top:0;
+}
+
 /**** Thumbs ****/
 div.our-work-thumb {width: 230px; margin: 2px; height: 230px; background: #EAEFF1;}
 div.our-work-thumb img {margin: 5px; opacity: 0.75;}
@@ -132,3 +145,4 @@ div.portfolio-show.right {overflow: scroll;}
 
 ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20px;}
 ul.other-client-projects li span{color: #9B9B9D}
+

@@ -2,6 +2,11 @@
 {% block title %}Portfolio - {{ portfolio.name | title }} {% endblock %}
 {% block theme 'purple-bg' %}
 {% block body %}
+{% javascripts '@SavvyPortfolioBundle/Resources/public/js/*' output='js/portfolio.js' %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="{{ asset_url }}" type="text/javascript" ></script>
+
+{% endjavascripts %}
   <h1>{{ portfolio.name | title }}</h1>
   <div class="portfolio-show right">
     {% for image in images %}
@@ -14,5 +19,18 @@
   <div class="portfolio-show-left">
     {{ portfolio.description|raw }}
   </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.top').addClass('hidden');
+        $.waypoints.settings.scrollThrottle = 30;
+        $('div#content h1').waypoint(function(event, direction) {
+            $(this).toggleClass('sticky', direction === "down").siblings('div.portfolio-show-left').toggleClass('sticky', direction === "down").siblings('div.portfolio-show.right').toggleClass('sticky', direction === "down");
+            event.stopPropagation();
+        },{
+            offset: 15
+        });
+    });
+  </script>
+
 
 {% endblock %}

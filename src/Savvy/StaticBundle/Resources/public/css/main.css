@@ -90,7 +90,8 @@ div#quick_nav {width:960px; margin: 0 auto;}
 .white-bg {background: #ffffff;}
 .purple-bg {background: #400035;}
 .rob {border-right: 1px solid #F78429;}
-.pat{padding: 0 25px 10px 25px;}
+.pat{padding: 0 25px;}
+.mat{margin-bottom: 10px}
 .white {color: #ffffff !important;}
 .orange {color: #F78429 !important;}
 .column50 {width: 49%;}

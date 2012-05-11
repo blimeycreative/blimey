@@ -2,7 +2,7 @@ html { overflow: scroll; }
 
 body {
   background: #400035 url(/images/home-bg.jpg) repeat-x left center;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Times New Roman",Georgia,Serif;
   font-size: 13px;
   height: 600px;
 }
@@ -12,7 +12,7 @@ body {
 	width: 960px;
 }
 
-p {margin-left: 487px; text-align: justify; width: 473px;}
+p {margin-left: 270px; text-align: justify; width: 473px;}
 
 p#visit {text-align: right;}
 

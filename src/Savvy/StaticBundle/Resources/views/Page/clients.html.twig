@@ -4,6 +4,7 @@
 {% block body %}
 <h1>OUR CLIENTS</h1>
   {{ parent() }}
+  <p id="visit" class="orange cb"><a href="{{ path('our_approach') }}">See why they work with us&hellip;</a></p>
 {% endblock %}
 {% block left %}
   <p>As you can see, our team have worked on some pretty impressive projects for some pretty big brands. And some not so big jobs too.</p>
@@ -16,6 +17,4 @@
   <img src="/images/logos.jpg" />
  {% endblock %}
 {% block quick_nav %}
-  <p id="visit" class="orange"><a href="{{ path('our_approach') }}">So do you want to know why they work with us?&hellip;</a></p>
-  <p id="address" class="cb white">23 BRIDGFORD ROAD, NOTTINGHAM, NG2 6AU. 01159 816276</p>
 {% endblock %}

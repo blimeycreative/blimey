@@ -18,6 +18,7 @@
   </div>
   <div class="portfolio-show-left">
     {{ portfolio.description|raw }}
+          <a class="orange" href="{{ path("portfolio") }}" {% if app.request.attributes.get('_route') == 'portfolio' %}class="underline"{% endif %}>See our other work&hellip;</a>
   </div>
   <script type="text/javascript">
     $(document).ready(function() {

@@ -66,7 +66,7 @@ body
 }
 
 h4 {color: #ffffff; font-size: 17px; margin: 8px 0; font-weight: lighter;}
-p {margin: 14px 0;}
+p {margin: 8px 0 15px; text-align: justify;}
 a, a:active, a:hover, a:visited {color: #9B9B9D;}
 a:hover {text-decoration: underline;}
 h1 {font-size: 28px; margin: 15px 0; letter-spacing: 2px; color: #643A63;font-family: "Times New Roman",Georgia,serif;}
@@ -96,16 +96,17 @@ div#quick_nav {width:960px; margin: 0 auto;}
 .orange {color: #F78429 !important;}
 .column50 {width: 49%;}
 .underline {text-decoration: underline;}
-.purple {margin-bottom: 0;padding-bottom:0;font-size: 14px;color: #643A63 !important;}
+.purple {margin-bottom: 0;padding-bottom:0;font-size: 14px;color: #B0006D !important; font-weight: 700;}
 .center {text-align: center;}
 .block {display: block;}
 .readmore{display: block; width: 100px; background: url('/images/triangle.png') no-repeat center right;}
+a.pink {color: #B0006D; font-weight: 700;}
 
 /*************  QUICK NAV  **************/
 div#quick_nav_wrapper {width: 960px; margin: 0 auto;}
 div#quick_nav {margin-left: 490px; padding: 0 14px 0 0; text-align: justify; width: 456px;}
 p#visit {text-align: right;}
-p#visit a {color: #F78429; text-decoration: none;}
+p#visit a {text-decoration: none;}
 p#address {margin-left: 10px;text-align: right;}
 
 /***************  TOP NAV  ******************/
@@ -149,4 +150,4 @@ ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20
 ul.other-client-projects li span{color: #9B9B9D}
 
 /******* CLIENTS *******/
-img.client-logo {padding:5px;margin: 0;}
+img.client-logo {padding:0 5px;margin: 0;}

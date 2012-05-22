@@ -7,7 +7,7 @@
 <script src="{{ asset_url }}" type="text/javascript" ></script>
 
 {% endjavascripts %}
-  <h1>{{ portfolio.name | title }}</h1>
+  <h1>{{ portfolio.name }}</h1>
   <div class="portfolio-show right">
     {% for image in images %}
       <img class="right" src="/images/our-work/{{ portfolio.slug | lower }}/{{ image.path }}" alt="{{ image.name }}" />

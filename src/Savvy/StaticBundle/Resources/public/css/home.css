@@ -12,13 +12,13 @@ body {
 	width: 960px;
 }
 
-p {margin-left: 270px; text-align: justify; width: 473px;}
+p {margin-left: 270px; text-align: justify; width: 473px; font-size: 15px; line-height: 19px;}
 
 p#visit {text-align: right;}
 
 p#visit a {text-decoration: none;}
 
-#address {margin-top: 0px; text-align: right;}
+#address {margin-top: 0px; text-align: right; font-size: 13px;}
 
 #logo {margin: 231px 0 125px;}
 

@@ -59,7 +59,7 @@ body
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.2em;
-  color: #9B9B9D;
+  color: #CCC;
   background: #400035 url('/images/bg.jpg') repeat-x top left;
   height: 100%;
   font-weight: lighter;
@@ -67,9 +67,9 @@ body
 
 h4 {color: #ffffff; font-size: 17px; margin: 8px 0; font-weight: lighter;}
 p {margin: 8px 0 15px; text-align: justify;}
-a, a:active, a:hover, a:visited {color: #9B9B9D;}
+a, a:active, a:hover, a:visited {color: #CCC;}
 a:hover {text-decoration: underline;}
-h1 {font-size: 28px; margin: 15px 0; letter-spacing: 2px; color: #643A63;font-family: "Times New Roman",Georgia,serif;}
+h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63; font-weight: 100;}
 h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
 
 /************  LAYOUT  **************/
@@ -117,7 +117,7 @@ ul.navigation li a {color: #643A63;margin-right: 28px;font-weight: normal;letter
 ul.navigation li a:hover, ul.navigation li a.underline {color: #F78429 !important;}
 
 /***************  THEME  ******************/
-div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #9B9B9D;}
+div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #CCC;}
 div#content_wrapper.white-bg {color: #643A63;}
 
 /****************  MEET THE TEAM  *****************/
@@ -148,7 +148,7 @@ div.portfolio-show-left h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
 div.portfolio-show-left p {margin: 3px 0 10px;}
 
 ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20px;}
-ul.other-client-projects li span{color: #9B9B9D}
+ul.other-client-projects li span{color: #CCC}
 
 /******* CLIENTS *******/
 img.client-logo {padding:0 5px;margin: 0;}

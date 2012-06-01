@@ -2,7 +2,10 @@
 {% block title 'Home' %}
 {% block theme 'purple-bg' %}
 {% block body %}
-  <img src="/images/logo.jpg" alt="logo" width="268" height="138" id="logo" />
+<div class="logo-wrapper">
+  <img src="/images/jubilee/logo-jubilee.jpg" alt="logo" width="268" height="138" id="logo" />
+  <img id="stamp" src="/images/jubilee/jubilee-stamp.png" />
+  </div>
   <p class="white">Welcome to Savvy Creative UK. We're one of the newest creative design and digital agencies in Nottingham, but we’re certainly not new to the industry.</p>
   <p class="white">Our experienced team have worked with a variety of brands, for a number of different industries here in the UK. We're all about high quality creative work - online and offline, above the line, below the line. All designed to improve your bottom line.</p>
 
@@ -10,4 +13,7 @@
 {% block quick_nav %}
   <p id="visit" class="orange"><a class="orange" href="{{ path('portfolio') }}">See our creative work&hellip;</a></p>
   <p id="address" class="cb white">23 Bridgford Road, Nottingham, NG2 6AU.&nbsp;&nbsp;0115 981 6276</p>
+  <div class ="cb"></div>
+  <img id="paws" src="/images/jubilee/paws.png" />
+  <img id="corgi" src="/images/jubilee/corgi.png" />
 {% endblock %}

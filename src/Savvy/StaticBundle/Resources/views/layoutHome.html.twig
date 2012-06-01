@@ -8,21 +8,25 @@
             '@SavvyStaticBundle/Resources/public/css/home.css'
             output='/css/home.css'
           %}
-            <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
+        <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
           {% endstylesheets %}
         {% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
-      <div id="wrapper">
-        <div id="content_wrapper" class="{% block theme %}{%endblock%}">
-          <div id="content">
+    <body class="jubilee">
+        <div class="jubilee-wrapper">
+            <div id="wrapper">
+                <div id="content_wrapper" class="{% block theme %}{%endblock%}">
+                    <div id="content">
             {% block body %}{% endblock %}
             {% block quick_nav %}{% endblock %}
-            <div class ="cb"></div>
-          </div>
-        </div>
+                            <div class ="cb"></div>
+                        </div>
+                    </div>
+                    <div class ="cb"></div>
         {% block javascripts %}{% endblock %}
-      </div>
-    </body>
-</html>
+                </div>
+            </div>
+
+        </body>
+    </html>

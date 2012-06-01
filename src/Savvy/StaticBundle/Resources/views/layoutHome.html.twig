@@ -57,10 +57,16 @@
        viewportheight = document.getElementsByTagName('body')[0].clientHeight
  }
 //-->
+var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
 if(viewportheight < 450){
-var element = document.getElementById("corgi");
-element.parentNode.removeChild(element);
-}
+    var element = document.getElementById("corgi");
+    element.parentNode.removeChild(element);
+    }
+}, false);
+
 </script>     
         {% endblock %}
                 </div>

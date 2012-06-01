@@ -59,18 +59,17 @@ body
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.2em;
-  color: #9B9B9D;
+  color: #CCC;
   background: #400035 url('/images/bg.jpg') repeat-x top left;
   height: 100%;
   font-weight: lighter;
 }
 
 h4 {color: #ffffff; font-size: 17px; margin: 8px 0; font-weight: lighter;}
-p {margin: 14px 0;}
-a, a:active, a:hover, a:visited {color: #9B9B9D;}
+p {margin: 8px 0 15px; text-align: justify;}
+a, a:active, a:hover, a:visited {color: #CCC;}
 a:hover {text-decoration: underline;}
-h1 {font-size: 28px; margin: 20px 0; letter-spacing: 2px; color: #643A63;}
-h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63;}
+h1 {font-size: 22px; margin: 15px 0; letter-spacing: 2px; color: #643A63; font-weight: 100;}
 h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
 
 /************  LAYOUT  **************/
@@ -79,9 +78,9 @@ div#header_wrapper {height: 138px;}
 div#header {width:960px; margin: 0 auto;}
 div#footer_wrapper {height: 32px;}
 div#footer {width:960px; margin: 0 auto;}
-div#content_wrapper {min-height: 637px; padding-bottom: 40px;}
+div#content_wrapper {padding-bottom: 40px;}
 div#content {width:940px; margin: 0 auto;padding: 10px;}
-div#quick_nav_wrapper {background: #400035; height: 261px;}
+div#quick_nav_wrapper {background: #400035; height: 30px;}
 div#quick_nav {width:960px; margin: 0 auto;}
 
 /******** GENERIC CLASSES *********/
@@ -90,35 +89,54 @@ div#quick_nav {width:960px; margin: 0 auto;}
 .right {float: right;}
 .white-bg {background: #ffffff;}
 .purple-bg {background: #400035;}
-.rob {border-right: 2px solid #C47136;}
-.white {color: #ffffff;}
-.orange {color: #C47136;}
-.column50 {width: 48%;}
+.rob {border-right: 1px solid #F78429;}
+.pat{padding: 0 25px;}
+.mat{margin-bottom: 10px}
+.white {color: #ffffff !important;}
+.orange {color: #F78429 !important;}
+.column50 {width: 47%;}
+.column50.right {width: 49%;}
 .underline {text-decoration: underline;}
-.purple {color: #643A63 !important;}
+.purple {margin-bottom: 0;padding-bottom:0;font-size: 14px;color: #B0006D !important; font-weight: 700;}
 .center {text-align: center;}
 .block {display: block;}
 .readmore{display: block; width: 100px; background: url('/images/triangle.png') no-repeat center right;}
+a.pink {color: #B0006D; font-weight: 700;}
 
 /*************  QUICK NAV  **************/
 div#quick_nav_wrapper {width: 960px; margin: 0 auto;}
 div#quick_nav {margin-left: 490px; padding: 0 14px 0 0; text-align: justify; width: 456px;}
 p#visit {text-align: right;}
-p#visit a {color: #F78429; text-decoration: none;}
+p#visit a {text-decoration: none;}
 p#address {margin-left: 10px;text-align: right;}
 
 /***************  TOP NAV  ******************/
-ul.navigation {margin: 50px 0 80px 0;}
+ul.navigation {margin: 50px 0 35px 0;}
 ul.navigation li {display: inline;}
 ul.navigation li a {color: #643A63;margin-right: 28px;font-weight: normal;letter-spacing: 2px;}
+ul.navigation li a:hover, ul.navigation li a.underline {color: #F78429 !important;}
 
 /***************  THEME  ******************/
-div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #9B9B9D;}
+div#content_wrapper.purple-bg ul.navigation li a, div#content_wrapper.purple-bg h1, div#content_wrapper.purple-bg h2 {color: #CCC;}
+div#content_wrapper.white-bg {color: #643A63;}
 
 /****************  MEET THE TEAM  *****************/
 div.column50.right ul li {margin: 0 0 5px 5px;}
 
 /****************  PORTFOLIO  *****************/
+
+div.portfolio-show-left.sticky {
+	position:fixed;
+	top:45px;
+}
+div.portfolio-show.right.sticky {
+	margin-top:45px;
+}
+h1.sticky {
+	position:fixed;
+	top:0;
+}
+
 /**** Thumbs ****/
 div.our-work-thumb {width: 230px; margin: 2px; height: 230px; background: #EAEFF1;}
 div.our-work-thumb img {margin: 5px; opacity: 0.75;}
@@ -128,7 +146,9 @@ div.portfolio-show {width: 620px;}
 div.portfolio-show-left {width: 300px;}
 div.portfolio-show-left h3 {color: #FFF; font-weight: 700; margin-bottom: 0;}
 div.portfolio-show-left p {margin: 3px 0 10px;}
-div.portfolio-show.right {overflow: scroll;}
 
 ul.other-client-projects li {color: #FFF; list-style: disc; margin: 5px 0 5px 20px;}
-ul.other-client-projects li span{color: #9B9B9D}
+ul.other-client-projects li span{color: #CCC}
+
+/******* CLIENTS *******/
+img.client-logo {padding:0 5px;margin: 0;}

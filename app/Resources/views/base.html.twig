@@ -24,7 +24,7 @@
           <div id="content">
             <ul class="navigation right">
               <li><a href="{{ path("home") }}" {% if app.request.attributes.get('_route') == 'home' %}class="underline"{% endif %}>HOME</a></li>
-              <li><a href="{{ path("portfolio") }}" {% if app.request.attributes.get('_route') == 'portfolio' %}class="underline"{% endif %}>WORK</a></li>
+              <li><a href="{{ path("portfolio") }}" {% if app.request.attributes.get('_route') in ['portfolio','work'] %}class="underline"{% endif %}>WORK</a></li>
               <li><a href="{{ path("clients") }}" {% if app.request.attributes.get('_route') == 'clients' %}class="underline"{% endif %}>CLIENTS</a></li>
               <li><a href="{{ path("our_approach") }}" {% if app.request.attributes.get('_route') == 'our_approach' %}class="underline"{% endif %}>APPROACH</a></li>
               
@@ -68,7 +68,9 @@
               </div>
         </div>
         <div id="footer_wrapper">
-          <div id="footer"></div>
+          <div id="footer">
+            <p id="address" class="cb white">23 Bridgford Road, Nottingham, NG2 6AU.&nbsp;&nbsp;0115 981 6276</p>
+          </div>
         </div>
 
         {% block javascripts %}{% endblock %}

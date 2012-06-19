@@ -53,5 +53,15 @@ class PageController extends Controller
     {
         return array();
     }
+    
+    /**
+     * @Route("/cookies", name="cookies")
+     * @Template()
+     */
+    public function cookiesAction()
+    {
+        return array();
+    }
+
 
 }

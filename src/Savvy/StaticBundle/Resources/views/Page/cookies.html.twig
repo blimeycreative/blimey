@@ -1,0 +1,81 @@
+{% extends 'SavvyStaticBundle::layout.html.twig' %}
+{% block title 'About Us' %}
+{% block theme 'white-bg' %}
+{% block body %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("ul.tabs").tabs("div.panes > div");
+    });
+</script>
+
+  <h1>Cookies</h1>
+  <p>Cookies sub line:</p>
+  {{ parent() }}
+  <p id="visit" class="pink cb"><a class="pink" href="{{ path('home') }}">Return to the home page&hellip;</a></p>
+{% endblock %}
+{% block left %}
+  <div class="panes">
+    <div>
+      <h4 class="purple">What are cookies?</h4>
+      <p>Cookies are small text files which are downloaded to your computer or mobile device when you visit a website or application. The do not contain any sensitive datas such as payment card details. Each time you visit the website your web browser will send these cookies back to the website so you can be recognised and remember such things as personalised details or user preferences.</p>
+      <p>Cookies are good and very useful. They do lots of different jobs which help to make your experience on websites as smooth as possible. For example, they let you move between web pages efficiently, remembering your preferences, and generally improving your experience (see below for more examples). They can also help to ensure that adverts you see online are more relevant to you and your interests.</p>
+      <p>A cookie can be classed as either a persistent or a session cookie, depending on how long they are used:</p>
+      <ol>
+        <li>Persistent cookies stay on your computer or device after the browser has been closed and last for the period of time specified in the cookie. These cookies are activated each time you visit the site where the cookie was generated.</li>
+        <li>Session cookies only last for your online session and disappear from your computer or device when you close your browser.A cookie is a small file of letters and numbers that we put on your computer. These cookies allow us to distinguish you from other users of the website which helps us to provide you with a good experience when you browse our website and also allows us to improve our site.</li>
+      </ol>
+    </div>
+    <div>
+      <h4 class="purple">The cookies we use.</h4>
+      <p>When you use our Digital Products and Services, the following 5 categories of cookies may be set on your device:</p>
+      <p>1. Necessary cookies</strong></p>
+      <p>These cookies are essential in helping you navigate our website(s) and use the features built in to the website. These features include such things as accessing secure areas of the website. Without these cookies, services you have may requirewould be unavailable. These cookies do not gather information about you that could be used for marketing or remembering where you've been on the internet.</p>
+      <p>An example of a necessary cookie is one that remembers text you've entered in a registration form during a live session</p>
+      <p>2. Functional cookies</p>
+			<p>Functional cookies allow websites and applications to remember choices you make (such as your user name, language or the region you are in) and provide enhanced, more personal features. The information these cookies collect is usually anonymised which means we can't identify you personally. They do not gather any information about you that could be used for selling advertising or remembering where you've been on the internet, but do help with serving advertising.</p>
+      <p>These types of cookies help to improve your experience on our website(s). An examples of how we do this is remembering if you've been to the site before so that messages intended for first-time users are not displayed to you.</p>
+      <p>Another type of cookie we use is an analytics cookie. This helps understand how you use our website(s). For example, we can see which parts of the website(s) are most popular, identify which programmes have been watched online, identify when errors occur, and test different versions of a page or feature to see which one works best.</p>
+     	<p>The web analytics services may also use cookies and similar technologies to make the information collected by the web beacons more useful. When you are viewing a website, a cookie is transferred to your browser by the web server and is stored on your computer. It can only be read by the server that gave it to you. Similar technologies may operate in other Digital Products and Services, such as our 4oD and Channel 4 News applications.</p>
+      <p>Cookies allow web analytics services to recognise your browser or device and, for example, identify whether you have visited our Digital Products and Services before, what you have previously viewed or clicked on, and how you found us. The information is anonymous and only used for statistical purposes. It allows us to track information, such as how many individual users we have and how often they visit our websites. It also helps us to analyse patterns of user activity and to develop a better user experience. For example, we might see that many people who viewed Programme A also viewed Programme B and we can then recommend Programme B to everyone else who viewed Programme A.</p>
+      <p>Web analytics data and cookies cannot be used to identify you as they <strong>never </strong>contain personal information such as your name or email address. However, if you have registered and signed in to our Digital Products and Services, we may combine information from your registration with the data we get from the web analytics service and its cookies (or similar technologies) to analyse how you and other people use our Digital Products and Services in detail and, where you have opted in to receive such communications, to send you email and other communications that might be of interest to you. The combined information may include information that is collected by the web analytics services while you are not signed in, and information that was collected using cookies and similar technologies before you registered or signed in.
+    </div>
+    <div>
+      <h4 class="purple">How to manage your cookies?</h4>
+      <p>Please remember that we do not use cookies to collect personally identifiable information about you. Cookies are used to help us improve your experience on our website(s), to enable you to benefit from specific features and to set preferences.</p>
+      <p>However, there are various ways that you can control and manage your cookies so we have provided information on how to do this below. It is important to note that changing any browser settings will affect other websites you visit not just this one.</p>
+      <p class="purple">Managing cookies in your browser</p>
+      <p>Most modern browsers will allow you to:</p>
+      <ol class="indented-list">
+        <li>See what cookies you've got and delete them on an individual basis.</li>
+        <li>Block third party cookies.</li>
+        <li>Block cookies from particular sites.</li>
+        <li>Block all cookies from being set.</li>
+        <li>Delete all cookies when you close your browser.</li>
+      </ol>
+      <p>When deleting cookies please note that any settings you have previously set will be lost. Incidentally this will include where you have opted out from cookies, as this requires an opt-out cookie to be set. Also, if you block cookies completely many websites will not work properly and some functionality on these websites will not work at all. We do not recommend turning cookies off for these reasons.</p>
+      <p>If you are primarily concerned about third party cookies generated by advertisers, you can turn these off separately. This is discussed in more detail below.</p>
+      <p>The links below take you to the ‘Help' sections for each of the major browsers so that you can find out more about how to manage your cookies.</p>
+      <ol class="links">
+        <li><strong>Internet Explorer</strong> - <a class="orange" href="http://support.microsoft.com/kb/196955">http://support.microsoft.com/kb/196955</a></li>
+        <li><strong>Firefox</strong> - <a class="orange" href="http://support.mozilla.org/en-US/kb/Cookies">http://support.mozilla.org/en-US/kb/Cookies</a></li>
+        <li><strong>Google Chrome</strong> - <a class="orange" href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647">http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647</a></li>
+        <li><strong>Opera</strong> - <a class="orange" href="http://www.opera.com/browser/tutorials/security/privacy/">http://www.opera.com/browser/tutorials/security/privacy/</a></li>
+        <li><strong>Safari</strong> - <a class="orange" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html">http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html</a></li>
+        <li><strong>Safari iOS</strong> - <a class="orange" href="http://support.apple.com/kb/HT1677">http://support.apple.com/kb/HT1677</a></li>
+        <li><strong>Android</strong> - <a class="orange" href="http://support.google.com/mobile/bin/answer.py?hl=en&amp;answer=169022">http://support.google.com/mobile/bin/answer.py?hl=en&amp;answer=169022</a></li>
+        <li><strong>Blackberry</strong> - <a class="orange" href="http://docs.blackberry.com/en/smartphone_users/deliverables/32004/Turn_off_cookies_in_the_browser_60_1072866_11.jsp">http://docs.blackberry.com/en/smartphone_users/deliverables/32004/Turn_off_cookies_in_the_browser_60_1072866_11.jsp</a></li>
+        <li><strong>Windows Phone</strong> - <a class="orange" href="http://www.microsoft.com/windowsphone/en-us/howto/wp7/web/changing-privacy-and-other-browser-settings.aspx">http://www.microsoft.com/windowsphone/en-us/howto/wp7/web/changing-privacy-and-other-browser-settings.aspx</a></li>
+      </ol>  
+    </div>
+  </div>
+{% endblock %}
+{% block right %}
+<ul class="tabs">
+  <li><a href="#first">What are cookies?</a></li>
+  <li><a href="#second">Which cookies do we use?</a></li>
+  <li><a href="#third">How to manage your cookies?</a></li>
+</ul>
+{% endblock %}
+{% block quick_nav %}{% endblock %}

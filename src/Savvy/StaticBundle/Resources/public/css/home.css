@@ -27,3 +27,5 @@ p#visit a {text-decoration: none;}
 .orange, .orange a {color: #F78429;}
 
 .purple, .purple a {color: #643A63;}
+
+.ccc-content p {font-size: 11px; text-align: left; width: auto;}

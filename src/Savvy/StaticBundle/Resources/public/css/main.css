@@ -225,3 +225,6 @@ ul.css-tabs a.current {
 
 .tabs li a {margin-bottom: 0;padding-bottom:0;font-size: 14px;color: #F78429; font-weight: 700;}
 .tabs li a.current {color: #B0006D;}
+
+
+.ccc-content p {font-size: 11px; text-align: left; width: auto;}

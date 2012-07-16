@@ -16,10 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'savvy-blog');
+define('DB_NAME', 'savvy_blog');
 
 /** MySQL database username */
-define('DB_USER', 'savvy_blog');
+define('DB_USER', 'savvyblog');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'qqyo11691');
